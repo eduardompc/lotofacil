@@ -3,7 +3,7 @@ ini_set('display_erros', true);
 require __DIR__ . '/vendor/autoload.php';
 use JSC\Lotofacil\Sorteio;
 
-$soteados = [];
+$sorteados = [];
 if (isset($_GET['sorteio'])) {
 		$sorteados = $_GET['sorteio'];
 }
@@ -20,7 +20,7 @@ if (isset($_GET['sorteio'])) {
 	<?php
 	$fixos = [1, 2, 6];
 	$fora = [4, 21];
-	$obSorteio = new Sorteio($fixos, $fora);
+	$obSorteio =new Sorteio($fixos, $fora);
 	?>
 	<div class="container">
 		<h1>Sorteio Lotofácil</h1>
